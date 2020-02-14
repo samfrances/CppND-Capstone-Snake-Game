@@ -47,7 +47,6 @@ The starting point for this project is a [simple snake clone](https://github.com
 - [x] Expiring food
   - Food expires over time, visibly fading until it disappears and is replaced with the next morsel, unless it is first consumed.
 - [ ] High score
-- [ ] Parallelize updates to snake and food
 
 ## Rubric
 
@@ -126,15 +125,6 @@ The starting point for this project is a [simple snake clone](https://github.com
       <td>
         <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/496742b1748a98dc97b6003de16fbfb26ceb1905#diff-18513665750ef5adf42b5ec29e14162eR7">here</a>
       </td>
-    </tr>
-    <tr>
-      <td rowspan="2">Parallelize updates to snake(s) and food</td>
-      <td>The project uses multithreading.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>A mutex or lock is used in the project.</td>
-      <td></td>
     </tr>
     <tr>
       <td rowspan="4">Move direction change logic into snake class</td>
