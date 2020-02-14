@@ -59,8 +59,7 @@ void Game::PlaceFood() {
     // Check that the location is not occupied by a snake item before placing
     // food.
     if (!snake.SnakeCell(x, y) && !adversary.SnakeCell(x, y)) {
-      food.x = x;
-      food.y = y;
+      food = Food{x, y};
       return;
     }
   }
@@ -88,7 +87,7 @@ void Game::UpdatePlayer(Snake& theSnake) {
   int new_y = static_cast<int>(theSnake.head_y);
 
   // Check if there's food over here
-  if (food.x == new_x && food.y == new_y) {
+  if (food.x() == new_x && food.y() == new_y) {
     theSnake.IncreaseScore(1);
     PlaceFood();
     // Grow snake and increase speed.
