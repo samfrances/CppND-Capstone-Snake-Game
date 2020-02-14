@@ -66,7 +66,7 @@ void Snake::UpdateBody(SDL_Point &current_head_cell, SDL_Point &prev_head_cell) 
 void Snake::GrowBody() { growing = true; }
 
 // Inefficient method to check if cell is occupied by snake.
-bool Snake::SnakeCell(int x, int y) {
+bool Snake::SnakeCell(int x, int y) const {
   if (x == static_cast<int>(head_x) && y == static_cast<int>(head_y)) {
     return true;
   }
@@ -76,4 +76,24 @@ bool Snake::SnakeCell(int x, int y) {
     }
   }
   return false;
+}
+
+Snake::Direction Snake::OppositeDirection(Snake::Direction direction) const {
+  switch (direction) {
+    case Direction::kUp:
+      return Direction::kDown;
+    case Direction::kDown:
+      return Direction::kUp;
+    case Direction::kRight:
+      return Direction::kLeft;
+    case Direction::kLeft:
+      return Direction::kRight;
+  }
+}
+
+void Snake::ChangeDirection(Snake::Direction newDirection) {
+  if (direction != OppositeDirection(newDirection) || size == 1) {
+    direction = newDirection;
+  }
+  return;
 }

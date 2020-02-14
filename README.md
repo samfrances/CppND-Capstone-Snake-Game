@@ -30,10 +30,14 @@ In this project, you can build your own C++ application or extend this Snake gam
 3. Compile: `cmake .. && make`
 4. Run it: `./SnakeGame`.
 
-## Added features
+## Added features / refactorings
 
 - [x] Fix food placement bug
   - In the starter code, the food could sometimes be placed at x and/or y coordinate of 32, which is outside of the grid (given that the 32x32 grid coords are zero-indexed).
+- [x] Move direction change logic into snake class
+  - Changing direction, and determining whether a change in a particular direction is possible, is more appropriately encapsulated within the snake class.
+  - I also created a helper method `Snake::OppositeDirection()` to encapsulate the logic of determining the opposite of a Snake::Direction value.
+  - Following these changes, it was possible to make the `Snake::direction` member private.
 - [ ] Expiring food
 - [ ] High score
 - [ ] Second snake
@@ -41,15 +45,19 @@ In this project, you can build your own C++ application or extend this Snake gam
 
 ## Rubric
 
-| Feature                                  | Rubric criteria satisfied                                                                      |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Expiring food                            | The project uses Object Oriented Programming techniques.                                       |
-|                                          | Classes use appropriate access specifiers for class members.                                   |
-|                                          | Class constructors utilize member initialization lists.                                        |
-|                                          | Classes abstract implementation details from their interfaces.                                 |
-|                                          | Classes encapsulate behavior.                                                                  |
-| High Score                               | The project reads data from a file and process the data, or the program writes data to a file. |
-|                                          | The project demonstrates an understanding of C++ functions and control structures.             |
-| Second snake                             | The project accepts user input and processes the input.                                        |
-| Parallelize updates to snake(s) and food | The project uses multithreading.                                                               |
-|                                          | A mutex or lock is used in the project.                                                        |
+| Feature / refactoring                        | Rubric criteria satisfied                                                                      |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Expiring food                                | The project uses Object Oriented Programming techniques.                                       |
+|                                              | Classes use appropriate access specifiers for class members.                                   |
+|                                              | Class constructors utilize member initialization lists.                                        |
+|                                              | Classes abstract implementation details from their interfaces.                                 |
+|                                              | Classes encapsulate behavior.                                                                  |
+| High Score                                   | The project reads data from a file and process the data, or the program writes data to a file. |
+|                                              | The project demonstrates an understanding of C++ functions and control structures.             |
+| Second snake                                 | The project accepts user input and processes the input.                                        |
+| Parallelize updates to snake(s) and food     | The project uses multithreading.                                                               |
+|                                              | A mutex or lock is used in the project.                                                        |
+| Move direction change logic into snake class | Classes encapsulate behavior.                                                                  |
+|                                              | The project uses Object Oriented Programming techniques.                                       |
+|                                              | Classes abstract implementation details from their interfaces.                                 |
+|                                              | The project demonstrates an understanding of C++ functions and control structures.             |
