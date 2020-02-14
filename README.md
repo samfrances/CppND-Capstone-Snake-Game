@@ -62,15 +62,21 @@ The starting point for this project is a [simple snake clone](https://github.com
     <tr>
       <td rowspan="5">Expiring food</td>
       <td>The project uses Object Oriented Programming techniques.</td>
-      <td></td>
+      <td>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/609f7f71db57cbc628d1b3c34b6e2d0d7c04b618">here</a>
+      </td>
     </tr>
     <tr>
       <td>Classes use appropriate access specifiers for class members.</td>
-      <td></td>
+      <td>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/609f7f71db57cbc628d1b3c34b6e2d0d7c04b618#diff-2a8a6c0d90317541e8c7cabd5076c1f5">here</a>
+      </td>
     </tr>
     <tr>
       <td>Class constructors utilize member initialization lists.</td>
-      <td></td>
+      <td>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/609f7f71db57cbc628d1b3c34b6e2d0d7c04b618#diff-2a8a6c0d90317541e8c7cabd5076c1f5R10-R14">here</a>
+      </td>
     </tr>
     <tr>
       <td>Classes abstract implementation details from their interfaces.</td>
