@@ -100,11 +100,16 @@ In this project, you can build your own C++ application or extend this Snake gam
     </tr>
     <tr>
       <td>The project makes use of references in function declarations.</td>
-      <td></td>
+      <td>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/496742b1748a98dc97b6003de16fbfb26ceb1905#diff-8489e9017bfe9a3e03b2c4b94f61c474R28">here</a> and
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/496742b1748a98dc97b6003de16fbfb26ceb1905#diff-8489e9017bfe9a3e03b2c4b94f61c474R33">here</a>
+      </td>
     </tr>
     <tr>
       <td>Class constructors utilize member initialization lists.</td>
-      <td></td>
+      <td>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/496742b1748a98dc97b6003de16fbfb26ceb1905#diff-18513665750ef5adf42b5ec29e14162eR7">here</a>
+      </td>
     </tr>
     <tr>
       <td rowspan="2">Parallelize updates to snake(s) and food</td>
@@ -118,19 +123,30 @@ In this project, you can build your own C++ application or extend this Snake gam
     <tr>
       <td rowspan="4">Move direction change logic into snake class</td>
       <td>Classes encapsulate behavior.</td>
-      <td></td>
+      <td>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/b1d15bad201cf8024827a43c678cb6cd2ea6a45d#diff-52537bb6a6d31158dba678bd0d88541a">here</a> and
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/b1d15bad201cf8024827a43c678cb6cd2ea6a45d#diff-5724de0b1684b15a68f2e893a80b0ddc">here</a>
+      </td>
     </tr>
     <tr>
       <td>The project uses Object Oriented Programming techniques.</td>
-      <td></td>
+      <td>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/b1d15bad201cf8024827a43c678cb6cd2ea6a45d#diff-52537bb6a6d31158dba678bd0d88541a">here</a> and
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/b1d15bad201cf8024827a43c678cb6cd2ea6a45d#diff-5724de0b1684b15a68f2e893a80b0ddc">here</a>
+      </td>
     </tr>
     <tr>
       <td>Classes abstract implementation details from their interfaces.</td>
-      <td></td>
+      <td>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/b1d15bad201cf8024827a43c678cb6cd2ea6a45d#diff-52537bb6a6d31158dba678bd0d88541a">here</a> and
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/b1d15bad201cf8024827a43c678cb6cd2ea6a45d#diff-5724de0b1684b15a68f2e893a80b0ddc">here</a>
+      </td>
     </tr>
     <tr>
       <td>The project demonstrates an understanding of C++ functions and control structures.</td>
-      <td></td>
+      <td>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/b1d15bad201cf8024827a43c678cb6cd2ea6a45d#a-5724de0b1684b15a68f2e893a80b0ddcR82-R91">here</a>
+      </td>
     </tr>
   </tbody>
 </table>
