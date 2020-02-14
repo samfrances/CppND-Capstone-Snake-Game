@@ -12,11 +12,15 @@ class Game {
   Game(std::size_t grid_width, std::size_t grid_height);
   void Run(Controller const &controller, Renderer &renderer,
            std::size_t target_frame_duration);
-  int GetScore() const;
-  int GetSize() const;
+  int SnakeScore() const;
+  int SnakeSize() const;
+  int AdversaryScore() const;
+  int AdversarySize() const;
+  bool GameOver() const;
 
  private:
   Snake snake;
+  Snake adversary;
   SDL_Point food;
 
   std::random_device dev;
@@ -24,10 +28,9 @@ class Game {
   std::uniform_int_distribution<int> random_w;
   std::uniform_int_distribution<int> random_h;
 
-  int score{0};
-
   void PlaceFood();
   void Update();
+  void UpdatePlayer(Snake& snake);
 };
 
 #endif

@@ -39,9 +39,15 @@ In this project, you can build your own C++ application or extend this Snake gam
   - Changing direction, and determining whether a change in a particular direction is possible, is more appropriately encapsulated within the snake class.
   - I also created a helper method `Snake::OppositeDirection()` to encapsulate the logic of determining the opposite of a Snake::Direction value.
   - Following these changes, it was possible to make the `Snake::direction` member private.
+- [x] Second snake
+  - The adversary snake is a user controlled snake controlled using the w/a/s/d keys.
+  - It has a green head to differentiate from the primary user.
+  - Each snake has its own score that is displayed in the title bar and and the end of the same.
+  - If a snake crashes into another snake, it dies. The snake that has been crashed into continues (unless they both crashed into each other's head).
+  - A dead snake remains as an obstacle for the other snake.
+  - The game continues until both snakes are dead.
 - [ ] Expiring food
 - [ ] High score
-- [ ] Second snake
 - [ ] Parallelize updates to snake and food
 
 ## Rubric
@@ -56,6 +62,8 @@ In this project, you can build your own C++ application or extend this Snake gam
 | High Score                                   | The project reads data from a file and process the data, or the program writes data to a file. |
 |                                              | The project demonstrates an understanding of C++ functions and control structures.             |
 | Second snake                                 | The project accepts user input and processes the input.                                        |
+|                                              | The project makes use of references in function declarations.                                  |
+|                                              | Class constructors utilize member initialization lists.                                        |
 | Parallelize updates to snake(s) and food     | The project uses multithreading.                                                               |
 |                                              | A mutex or lock is used in the project.                                                        |
 | Move direction change logic into snake class | Classes encapsulate behavior.                                                                  |

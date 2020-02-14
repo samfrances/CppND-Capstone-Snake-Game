@@ -3,20 +3,25 @@
 #include <iostream>
 
 void Snake::Update() {
-  SDL_Point prev_cell{
-      static_cast<int>(head_x),
-      static_cast<int>(
-          head_y)};  // We first capture the head's cell before updating.
+  if (!alive) {
+    return;
+  }
+  auto prev_cell = HeadCell(); // We first capture the head's cell before updating.
   UpdateHead();
-  SDL_Point current_cell{
-      static_cast<int>(head_x),
-      static_cast<int>(head_y)};  // Capture the head's cell after updating.
+  auto current_cell = HeadCell();  // Capture the head's cell after updating.
 
   // Update all of the body vector items if the snake head has moved to a new
   // cell.
   if (current_cell.x != prev_cell.x || current_cell.y != prev_cell.y) {
     UpdateBody(current_cell, prev_cell);
   }
+}
+
+SDL_Point Snake::HeadCell() const {
+  SDL_Point head_cell{
+      static_cast<int>(head_x),
+      static_cast<int>(head_y)};
+  return head_cell;
 }
 
 void Snake::UpdateHead() {
@@ -63,6 +68,23 @@ void Snake::UpdateBody(SDL_Point &current_head_cell, SDL_Point &prev_head_cell) 
   }
 }
 
+bool Snake::CheckCollision(Snake const other) {
+
+  auto head = HeadCell();
+
+  // Check body
+  for (auto const &item : other.body) {
+    if (head.x == item.x && head.y == item.y) {
+      alive = false;
+    }
+  }
+  // Check head
+  auto other_head = other.HeadCell();
+  if (head.x == other_head.x && head.y == other_head.y) {
+    alive = false;
+  }
+}
+
 void Snake::GrowBody() { growing = true; }
 
 // Inefficient method to check if cell is occupied by snake.
@@ -96,4 +118,12 @@ void Snake::ChangeDirection(Snake::Direction newDirection) {
     direction = newDirection;
   }
   return;
+}
+
+int Snake::Score() const {
+  return score;
+}
+
+void Snake::IncreaseScore(unsigned int increment) {
+  score += increment;
 }
