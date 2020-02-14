@@ -32,10 +32,10 @@ In this project, you can build your own C++ application or extend this Snake gam
 
 ## Added features
 
-* Expiring food
-* High score
-* Second snake
-* Parallelize updates to snake and food
+- [ ] Expiring food
+- [ ] High score
+- [ ] Second snake
+- [ ] Parallelize updates to snake and food
 
 ## Rubric
 
