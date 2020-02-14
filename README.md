@@ -44,7 +44,8 @@ The starting point for this project is a [simple snake clone](https://github.com
   - If a snake crashes into another snake, it dies. The snake that has been crashed into continues (unless they both crashed into each other's head).
   - A dead snake remains as an obstacle for the other snake.
   - The game continues until both snakes are dead.
-- [ ] Expiring food
+- [x] Expiring food
+  - Food expires over time, visibly fading until it disappears and is replaced with the next morsel, unless it is first consumed.
 - [ ] High score
 - [ ] Parallelize updates to snake and food
 
@@ -60,7 +61,7 @@ The starting point for this project is a [simple snake clone](https://github.com
   </thead>
   <tbody>
     <tr>
-      <td rowspan="5">Expiring food</td>
+      <td rowspan="6">Expiring food</td>
       <td>The project uses Object Oriented Programming techniques.</td>
       <td>
         <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/609f7f71db57cbc628d1b3c34b6e2d0d7c04b618">here</a>
@@ -69,7 +70,8 @@ The starting point for this project is a [simple snake clone](https://github.com
     <tr>
       <td>Classes use appropriate access specifiers for class members.</td>
       <td>
-        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/609f7f71db57cbc628d1b3c34b6e2d0d7c04b618#diff-2a8a6c0d90317541e8c7cabd5076c1f5">here</a>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/609f7f71db57cbc628d1b3c34b6e2d0d7c04b618#diff-2a8a6c0d90317541e8c7cabd5076c1f5">here</a> and
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/7179b7dea93fb0a2f4691e126df32e14373d34b4#diff-2a8a6c0d90317541e8c7cabd5076c1f5">here</a>
       </td>
     </tr>
     <tr>
@@ -80,11 +82,21 @@ The starting point for this project is a [simple snake clone](https://github.com
     </tr>
     <tr>
       <td>Classes abstract implementation details from their interfaces.</td>
-      <td></td>
+      <td>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/7179b7dea93fb0a2f4691e126df32e14373d34b4#diff-1132b3f1f84a5c35465145b8014b498f">here</a>
+      </td>
+    </tr>
+    <tr>
+      <td>The project makes use of references in function declarations.</td>
+      <td>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/7179b7dea93fb0a2f4691e126df32e14373d34b4#diff-8489e9017bfe9a3e03b2c4b94f61c474R41">here</a>
+      </td>
     </tr>
     <tr>
       <td>Classes encapsulate behavior.</td>
-      <td></td>
+      <td>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/7179b7dea93fb0a2f4691e126df32e14373d34b4#diff-1132b3f1f84a5c35465145b8014b498f">here</a>
+      </td>
     </tr>
     <tr>
       <td rowspan="2">High Score</td>
