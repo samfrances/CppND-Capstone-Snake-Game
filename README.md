@@ -162,4 +162,7 @@ The starting point for this project is a [simple snake clone](https://github.com
 The project structure hasn't changed significantly from the [starter project](https://github.com/udacity/CppND-Capstone-Snake-Game).
 Most changes have taken place within the context of that structure.
 
+However, an additional class `Food` has been created to encapsulate the behaviour of a single piece of food,
+including its position and expiry. The code for `Food` is in [src/food.h](src/food.h) and [src/food.cpp](src/food.cpp).
+
 A full diff can be viewed [here](https://github.com/samfrances/CppND-Capstone-Snake-Game/compare/starting_point...samfrances:master).
