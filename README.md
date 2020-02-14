@@ -29,3 +29,25 @@ In this project, you can build your own C++ application or extend this Snake gam
 2. Make a build directory in the top level directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
 4. Run it: `./SnakeGame`.
+
+## Added features
+
+* Expiring food
+* High score
+* Second snake
+* Parallelize updates to snake and food
+
+## Rubric
+
+| Feature                                  | Rubric criteria satisfied                                                                      |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Expiring food                            | The project uses Object Oriented Programming techniques.                                       |
+|                                          | Classes use appropriate access specifiers for class members.                                   |
+|                                          | Class constructors utilize member initialization lists.                                        |
+|                                          | Classes abstract implementation details from their interfaces.                                 |
+|                                          | Classes encapsulate behavior.                                                                  |
+| High Score                               | The project reads data from a file and process the data, or the program writes data to a file. |
+|                                          | The project demonstrates an understanding of C++ functions and control structures.             |
+| Second snake                             | The project accepts user input and processes the input.                                        |
+| Parallelize updates to snake(s) and food | The project uses multithreading.                                                               |
+|                                          | A mutex or lock is used in the project.                                                        |
