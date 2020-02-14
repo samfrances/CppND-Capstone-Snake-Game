@@ -31,6 +31,9 @@ Renderer::Renderer(const std::size_t screen_width,
     std::cerr << "Renderer could not be created.\n";
     std::cerr << "SDL_Error: " << SDL_GetError() << "\n";
   }
+
+  // Got help from here: https://stackoverflow.com/questions/24534379/sdl2-alpha-not-working
+  SDL_SetRenderDrawBlendMode(sdl_renderer, SDL_BLENDMODE_BLEND);
 }
 
 Renderer::~Renderer() {
@@ -48,10 +51,7 @@ void Renderer::Render(Snake const snake, Snake const adversary, Food const &food
   SDL_RenderClear(sdl_renderer);
 
   // Render food
-  SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0xCC, 0x00, 0xFF);
-  block.x = food.x() * block.w;
-  block.y = food.y() * block.h;
-  SDL_RenderFillRect(sdl_renderer, &block);
+  RenderFood(food, block);
 
   // render snake and adversary
   // Render bodies first, heads second, so heads always show over bodies
@@ -67,10 +67,22 @@ void Renderer::Render(Snake const snake, Snake const adversary, Food const &food
   SDL_RenderPresent(sdl_renderer);
 }
 
-void Renderer::RenderSnakeBody(
-  Snake const snake,
-  SDL_Rect& block // TODO note use of reference
-) {
+void Renderer::RenderFood(Food const food, SDL_Rect& block) {
+  // Render food
+
+  // Calculate opacity based on shelf life, but with lower bound of 60
+  auto opacity = std::min(
+    (food.RemainingShelfLife() * 255) + 60,
+    255.0f
+  );
+
+  SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0xCC, 0x00, opacity);
+  block.x = food.x() * block.w;
+  block.y = food.y() * block.h;
+  SDL_RenderFillRect(sdl_renderer, &block);
+}
+
+void Renderer::RenderSnakeBody(Snake const snake, SDL_Rect& block) {
 
   // Render snake's body
   SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0xFF, 0xFF, 0xFF);

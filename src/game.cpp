@@ -78,6 +78,11 @@ void Game::Update() {
   snake.CheckCollision(adversary);
   adversary.CheckCollision(snake);
 
+  food.Update();
+  if (food.Expired()) {
+    PlaceFood();
+  }
+
 }
 
 void Game::UpdatePlayer(Snake& theSnake) {

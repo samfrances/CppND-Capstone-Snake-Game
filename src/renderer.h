@@ -37,6 +37,8 @@ class Renderer {
     Uint8 blue,
     Uint8 alpha
   );
+
+  void RenderFood(Food const food, SDL_Rect& block);
 };
 
 #endif
