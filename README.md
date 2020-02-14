@@ -32,6 +32,8 @@ In this project, you can build your own C++ application or extend this Snake gam
 
 ## Added features
 
+- [x] Fix food placement bug
+  - In the starter code, the food could sometimes be placed at x and/or y coordinate of 32, which is outside of the grid (given that the 32x32 grid coords are zero-indexed).
 - [ ] Expiring food
 - [ ] High score
 - [ ] Second snake
