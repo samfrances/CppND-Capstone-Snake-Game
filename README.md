@@ -34,6 +34,7 @@ In this project, you can build your own C++ application or extend this Snake gam
 
 - [x] Fix food placement bug
   - In the starter code, the food could sometimes be placed at x and/or y coordinate of 32, which is outside of the grid (given that the 32x32 grid coords are zero-indexed).
+  - I corrected this "off by one" error.
 - [x] Move direction change logic into snake class
   - Changing direction, and determining whether a change in a particular direction is possible, is more appropriately encapsulated within the snake class.
   - I also created a helper method `Snake::OppositeDirection()` to encapsulate the logic of determining the opposite of a Snake::Direction value.
