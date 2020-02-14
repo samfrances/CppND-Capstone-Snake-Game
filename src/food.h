@@ -7,19 +7,8 @@
 class Food {
  public:
 
-  Food(int x, int y)
-      : _x(x),
-        _y(y),
-        maxshelflife(1000) {
-          shelflife = maxshelflife;
-        }
-
-  Food()
-      : _x(0),
-      _y(0),
-      maxshelflife(1000) {
-        shelflife = maxshelflife;
-      }
+  Food(int x, int y);
+  Food();
 
   void Update();
   int x() const;
