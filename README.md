@@ -62,82 +62,73 @@ In this project, you can build your own C++ application or extend this Snake gam
   </thead>
   <tbody>
     <tr>
-      <td>Expiring food</td>
+      <td rowspan="5">Expiring food</td>
       <td>The project uses Object Oriented Programming techniques.</td>
       <td></td>
     </tr>
     <tr>
-      <td></td>
       <td>Classes use appropriate access specifiers for class members.</td>
       <td></td>
     </tr>
     <tr>
-      <td></td>
       <td>Class constructors utilize member initialization lists.</td>
       <td></td>
     </tr>
     <tr>
-      <td></td>
       <td>Classes abstract implementation details from their interfaces.</td>
       <td></td>
     </tr>
     <tr>
-      <td></td>
       <td>Classes encapsulate behavior.</td>
       <td></td>
     </tr>
     <tr>
-      <td>High Score</td>
+      <td rowspan="2">High Score</td>
       <td>The project reads data from a file and process the data, or the program writes data to a file.</td>
       <td></td>
     </tr>
     <tr>
-      <td></td>
       <td>The project demonstrates an understanding of C++ functions and control structures.</td>
       <td></td>
     </tr>
     <tr>
-      <td>Second snake</td>
+      <td rowspan="3">Second snake</td>
       <td>The project accepts user input and processes the input.</td>
-      <td><a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/496742b1748a98dc97b6003de16fbfb26ceb1905#diff-52537bb6a6d31158dba678bd0d88541aR29-R43">here</a></td>
+      <td>
+        <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/496742b1748a98dc97b6003de16fbfb26ceb1905#diff-52537bb6a6d31158dba678bd0d88541aR29-R43">here</a>
+      </td>
     </tr>
     <tr>
-      <td></td>
       <td>The project makes use of references in function declarations.</td>
       <td></td>
     </tr>
     <tr>
-      <td></td>
       <td>Class constructors utilize member initialization lists.</td>
       <td></td>
     </tr>
     <tr>
-      <td>Parallelize updates to snake(s) and food</td>
+      <td rowspan="2">Parallelize updates to snake(s) and food</td>
       <td>The project uses multithreading.</td>
       <td></td>
     </tr>
     <tr>
-      <td></td>
       <td>A mutex or lock is used in the project.</td>
       <td></td>
     </tr>
     <tr>
-      <td>Move direction change logic into snake class</td>
+      <td rowspan="4">Move direction change logic into snake class</td>
       <td>Classes encapsulate behavior.</td>
       <td></td>
     </tr>
     <tr>
-      <td></td>
       <td>The project uses Object Oriented Programming techniques.</td>
       <td></td>
     </tr>
     <tr>
-      <td></td>
       <td>Classes abstract implementation details from their interfaces.</td>
       <td></td>
     </tr>
     <tr>
-      <td></td>
       <td>The project demonstrates an understanding of C++ functions and control structures.</td>
       <td></td>
     </tr>
