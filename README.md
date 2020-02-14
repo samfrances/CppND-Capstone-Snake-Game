@@ -61,7 +61,7 @@ In this project, you can build your own C++ application or extend this Snake gam
 |                                              | Classes encapsulate behavior.                                                                  |          |
 | High Score                                   | The project reads data from a file and process the data, or the program writes data to a file. |          |
 |                                              | The project demonstrates an understanding of C++ functions and control structures.             |          |
-| Second snake                                 | The project accepts user input and processes the input.                                        | [here](commit/496742b1748a98dc97b6003de16fbfb26ceb1905#diff-52537bb6a6d31158dba678bd0d88541aR29-R43)         |
+| Second snake                                 | The project accepts user input and processes the input.                                        | [here](https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/496742b1748a98dc97b6003de16fbfb26ceb1905#diff-52537bb6a6d31158dba678bd0d88541aR29-R43)         |
 |                                              | The project makes use of references in function declarations.                                  |          |
 |                                              | Class constructors utilize member initialization lists.                                        |          |
 | Parallelize updates to snake(s) and food     | The project uses multithreading.                                                               |          |
