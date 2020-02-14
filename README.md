@@ -150,3 +150,10 @@ In this project, you can build your own C++ application or extend this Snake gam
     </tr>
   </tbody>
 </table>
+
+## Project structure
+
+The project structure hasn't changed significantly from the starter files.
+Most changes have taken place within the context of that structure.
+
+A full diff can be viewed [here](https://github.com/samfrances/CppND-Capstone-Snake-Game/compare/starting_point...samfrances:master)
