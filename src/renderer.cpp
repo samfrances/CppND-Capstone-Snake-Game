@@ -67,7 +67,7 @@ void Renderer::Render(Snake const snake, Snake const adversary, Food const &food
   SDL_RenderPresent(sdl_renderer);
 }
 
-void Renderer::RenderFood(Food const food, SDL_Rect& block) {
+void Renderer::RenderFood(const Food& food, SDL_Rect& block) {
   // Render food
 
   // Calculate opacity based on shelf life, but with lower bound of 60
@@ -82,7 +82,7 @@ void Renderer::RenderFood(Food const food, SDL_Rect& block) {
   SDL_RenderFillRect(sdl_renderer, &block);
 }
 
-void Renderer::RenderSnakeBody(Snake const snake, SDL_Rect& block) {
+void Renderer::RenderSnakeBody(const Snake& snake, SDL_Rect& block) {
 
   // Render snake's body
   SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0xFF, 0xFF, 0xFF);
@@ -95,7 +95,7 @@ void Renderer::RenderSnakeBody(Snake const snake, SDL_Rect& block) {
 }
 
 void Renderer::RenderSnakeHead(
-  Snake const snake,
+  const Snake& snake,
   SDL_Rect& block, // TODO note use of reference
   // head colour
   Uint8 red,

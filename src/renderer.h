@@ -25,12 +25,12 @@ class Renderer {
   const std::size_t grid_height;
 
   void RenderSnakeBody(
-    Snake const snake,
+    const Snake& snake,
     SDL_Rect& block
   );
 
   void RenderSnakeHead(
-    Snake const snake,
+    const Snake& snake,
     SDL_Rect& block,
     Uint8 red,
     Uint8 green,
@@ -38,7 +38,7 @@ class Renderer {
     Uint8 alpha
   );
 
-  void RenderFood(Food const food, SDL_Rect& block);
+  void RenderFood(const Food& food, SDL_Rect& block);
 };
 
 #endif
