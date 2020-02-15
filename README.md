@@ -46,6 +46,7 @@ The starting point for this project is a [simple snake clone](https://github.com
   - The game continues until both snakes are dead.
 - [x] Expiring food
   - Food expires over time, visibly fading until it disappears and is replaced with the next morsel, unless it is first consumed.
+  - The speed at which food expires is random within a set range.
 - [ ] High score
 
 ## Rubric

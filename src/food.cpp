@@ -1,8 +1,9 @@
 #include "food.h"
 
-Food::Food(int x, int y)
+Food::Food(int x, int y, float expiry_speed)
   : _x(x),
     _y(y),
+    speed(expiry_speed),
     maxshelflife(1000) {
       shelflife = maxshelflife;
     }
@@ -10,6 +11,7 @@ Food::Food(int x, int y)
 Food::Food()
   : _x(0),
   _y(0),
+  speed(1),
   maxshelflife(1000) {
     shelflife = maxshelflife;
   }

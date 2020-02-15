@@ -7,7 +7,7 @@
 class Food {
  public:
 
-  Food(int x, int y);
+  Food(int x, int y, float expiry_speed);
   Food();
 
   void Update();
@@ -19,7 +19,7 @@ class Food {
  private:
   int _x;
   int _y;
-  float speed{3};
+  float speed;
   float shelflife;
   float maxshelflife;
 };
