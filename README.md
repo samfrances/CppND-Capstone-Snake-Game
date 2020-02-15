@@ -47,7 +47,6 @@ The starting point for this project is a [simple snake clone](https://github.com
 - [x] Expiring food
   - Food expires over time, visibly fading until it disappears and is replaced with the next morsel, unless it is first consumed.
   - The speed at which food expires is random within a set range.
-- [ ] High score
 
 ## Rubric
 
@@ -97,15 +96,6 @@ The starting point for this project is a [simple snake clone](https://github.com
       <td>
         <a href="https://github.com/samfrances/CppND-Capstone-Snake-Game/commit/7179b7dea93fb0a2f4691e126df32e14373d34b4#diff-1132b3f1f84a5c35465145b8014b498f">here</a>
       </td>
-    </tr>
-    <tr>
-      <td rowspan="2">High Score</td>
-      <td>The project reads data from a file and process the data, or the program writes data to a file.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>The project demonstrates an understanding of C++ functions and control structures.</td>
-      <td></td>
     </tr>
     <tr>
       <td rowspan="3">Second snake</td>
